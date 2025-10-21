@@ -1,0 +1,225 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f8cdda, #1d2b64);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: rgba(255 255 255 / 0.15);
+  backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 1px 1px 4px #0006;
+}
+
+/* Navigation */
+nav {
+  margin-top: 12px;
+}
+
+nav a {
+  color: #ffefd5;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ff9a9e;
+  color: #1d2b64;
+  box-shadow: 0 0 10px #ff9a9eaa;
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffe4e1;
+  text-shadow: 1px 1px 3px #0008;
+}
+
+main p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  color: #f0e6e6;
+}
+
+/* Featured Products Section */
+.featured-products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: rgba(255 255 255 / 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  padding: 30px 20px;
+  color: #fff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #0008;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.product-card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.product-card button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1d2b64;
+  background: #ff9a9e;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px #ff9a9ecc;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card button:hover {
+  background: #ff6772;
+  color: #fff;
+  box-shadow: 0 6px 15px #ff6772cc;
+}
+
+/* Product Detail Page */
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.product-detail img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.detail-info {
+  max-width: 400px;
+}
+
+.detail-info h2 {
+  font-size: 2rem;
+  color: #ffe4e1;
+  margin-bottom: 10px;
+}
+
+.detail-info p {
+  font-size: 1.1rem;
+  color: #f5f5f5;
+  margin-bottom: 12px;
+}
+
+/* Back to Home Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px #ff9a9e66;
+}
+
+.back-btn:hover {
+  background: #ff9a9e;
+  color: #1d2b64;
+  box-shadow: 0 0 20px #ff9a9ecc;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: #1d2b64;
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  box-shadow: inset 0 1px 3px #0009;
+  margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .featured-products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  .product-detail {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail-info {
+    text-align: center;
+  }
+}

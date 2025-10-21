@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #d95d39;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #d95d39;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #c7442f;
+}
+
+/* Main */
+h1 {
+  text-align: center;
+  margin: 30px 0 20px;
+  color: #fff;
+}
+
+blockquote {
+  background: #ffffffcc;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-left: 6px solid #d95d39;
+  border-radius: 10px;
+  font-style: italic;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Review form */
+#reviewForm {
+  margin: 30px auto;
+  width: 80%;
+  background: #ffffffcc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#reviewForm input, #reviewForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#reviewForm button {
+  padding: 10px 20px;
+  background-color: #d95d39;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#reviewForm button:hover {
+  background-color: #c7442f;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #777;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+}

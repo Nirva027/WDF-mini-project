@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login - SilvaGlow</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Admin Panel</h1>
+      <p>Welcome to the Admin Login</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin-Login</a>
+        
+      </nav>
+      <p id="adminGreeting" style="color:#e60073;"></p>
+    </header>
+
+    <form id="adminForm">
+      <label for="admin-username">Username:</label>
+      <input type="text" id="admin-username" name="admin-username" required />
+
+      <label for="admin-password">Password:</label>
+      <input type="password" id="admin-password" name="admin-password" required />
+
+      <button type="submit">Login</button>
+      <p id="loginMessage" style="color:green; margin-top:10px;"></p>
+    </form>
+
+    <div class="link">
+      <p>Back to <a href="index.html">User Register</a></p>
+    </div>
+
+    <footer>
+      <p>© 2025 SilvaGlow Skincare. Admin Access Only.</p>
+    </footer>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

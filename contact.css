@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #9b3192;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #9b3192;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #79256d;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 3px #79256d;
+}
+
+form {
+  background: #ffffffdd;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #9b3192;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #9b3192;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #79256d;
+}
+
+#responseMessage {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #79256d;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  color: #777;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
